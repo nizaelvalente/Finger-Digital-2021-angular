@@ -1,0 +1,50 @@
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--cor-primaria);
+            padding: 0 20px;
+            color: white;
+            height: 60px;
+        }
+
+        .body {
+            overflow: auto;
+            padding: 20px;
+            display: grid;
+            place-items: center;
+        }
+
+        table {
+            border: none;
+            background: rgb(226, 226, 226);
+        }
+        :where(th, td) {
+            text-align: left;
+            border: none;
+            height: 30px;
+            padding: 0 3px;
+        }
+
+        th{
+            background: var(--cor-terciaria-ii);
+
+        }
+
+        :where(th, td) {
+            width: 20%;
+        }
+
+        
+        :where(th, td):first-child {
+            width:5%;
+        }
+
+        @media screen and (orientation: portrait) and (max-width:600px),
+        (orientation: landscape) and (max-height:600px) {
+            .header {
+                padding: 0 10px;
+            }
+        }
+
+    

@@ -1,0 +1,27 @@
+<div class="dashboard">
+    <header class="header">
+        <h1>Finger Digital 2021</h1>
+    </header>
+    <div class="body">
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Company Name</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pessoa of pessoas">
+                    <td>{{pessoa.id}}</td>
+                    <td>{{pessoa.name}}</td>
+                    <td>{{pessoa.email}}</td>
+                    <td>{{pessoa.address.city}}</td>
+                    <td>{{pessoa.company.name}}</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
