@@ -27,8 +27,8 @@
         }
 
         th{
-            background: var(--cor-terciaria-ii);
-
+            background: var(--cor-hover);
+            color: white;
         }
 
         :where(th, td) {
